@@ -1,0 +1,12 @@
+{
+  "name": "schul-tools",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "set-key": "wrangler secret put ACCESS_KEY"
+  },
+  "devDependencies": {
+    "wrangler": "^4.148.0"
+  }
+}

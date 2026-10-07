@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "schul-tools",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true,     // jede Anfrage läuft zuerst durch die Schlüsselprüfung
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+  // Optional: Einbettung nur in Classroomscreen erlauben (vorher testen!):
+  // "vars": { "FRAME_ANCESTORS": "https://classroomscreen.com https://*.classroomscreen.com" }
+}
